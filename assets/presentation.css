@@ -1,0 +1,37 @@
+.backgrounds {
+  opacity: 0.25;
+}
+
+.reveal section img {
+  background: white;
+  border: none;
+  padding: 10px;
+}
+
+.reveal.slide::after {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+  content: "";
+  width: 300px;
+  height: 79px;
+  background: url("logo-onepoint-300x79.png") no-repeat;
+}
+
+.title .author {
+  margin: 50px;
+  font-size: 1.5em;
+}
+
+section.title::before {
+  display: block;
+  position: absolute;
+  top: -124px;
+  right: 50%;
+  margin-right: -63px;
+  content: "";
+  width: 125px;
+  height: 124px;
+  background: url("python-logo.png") no-repeat;
+}
