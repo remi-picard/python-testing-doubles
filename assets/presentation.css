@@ -35,3 +35,7 @@ section.title::before {
   height: 124px;
   background: url("python-logo.png") no-repeat;
 }
+
+section.title .preamble {
+  font-size: 0.6em;
+}

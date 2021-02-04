@@ -2,6 +2,7 @@
 Rémi PICARD <picard.remi@gmail.com>
 :website: https://remi-picard.github.io/cv/
 :lang: fr
+:date: February 4, 2021
 :source-highlighter: highlightjs
 :highlightjs-theme: reveal.js/lib/css/zenburn.css
 :revealjs_history: true
@@ -9,7 +10,6 @@ Rémi PICARD <picard.remi@gmail.com>
 :revealjs_slideNumber: true
 :revealjs_mouseWheel: true
 :customcss: assets/presentation.css
-
 ////
 :doctype: book
 :reproducible:
@@ -17,6 +17,8 @@ Rémi PICARD <picard.remi@gmail.com>
 :listing-caption: Listing
 :pdf-page-size: Letter
 ////
+
+_Utiliser ←/→ ↑/↓ ␛ pour naviguer dans la présentation._
 
 == Pourquoi tester ?
 
@@ -50,13 +52,14 @@ def test_very_simple():
     assert 1 + 2 == 3
 ----
 
-== Fonctions pures
+== 💡 Coder un max de fonctions pures !
 
 - Des entrées
 - Une sortie
 - On ne modifie pas les entrées
 - Pas d'effet de bord
-- Très simple à tester
+
+✌ Très simples à tester
 
 == Framework de tests
 
@@ -142,7 +145,7 @@ Un **Mock** est une coquille vide qui ne retourne rien.
 
 Un **Spy** appelle le code de l'objet qu'il remplace. On ne surcharge que certaines méthodes.
 
-🧙‍♂️ Démo
+🧙‍♂️ Démos https://github.com/remi-picard/python-testing-doubles/blob/main/demo/testing-doubles/tests/test_service_mock.py[Mocks] et https://github.com/remi-picard/python-testing-doubles/blob/main/demo/testing-doubles/tests/test_service_spy.py[Spies]
 
 === Fake objects ~ Faux, truqués
 
