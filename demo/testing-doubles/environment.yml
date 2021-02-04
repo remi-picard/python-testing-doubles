@@ -1,0 +1,6 @@
+name: testing-doubles
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - pytest=6.2.2
