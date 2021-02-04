@@ -1,0 +1,24 @@
+name: Deploy the static file to GitHub Page
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      - name: Install and Build 🔧
+        run: |
+          git clone -b 3.6.0 --depth 1 https://github.com/hakimel/reveal.js.git
+          mv presentation.html index.html
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: .
